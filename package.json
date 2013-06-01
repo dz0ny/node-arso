@@ -1,0 +1,26 @@
+{
+  "name": "arso",
+  "version": "0.0.1",
+  "bin": {
+    "arso": "bin/arso"
+  },
+  "description": "Weather from ARSO",
+  "scripts": {
+    "compile": "echo \"#!/usr/bin/env nodejs\" > bin/arso;coffee -p -b -c ./src/cli.coffee >> bin/arso",
+    "compilelib": "coffee -o lib -b -c ./src/arso.coffee"
+  },
+  "repository": "git@github.com:dz0ny/node-arso.git",
+  "keywords": [
+    "weather",
+    "slovenia"
+  ],
+  "author": "dz0ny",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "~1.6.2",
+    "request": "~2.21.0",
+    "commander": "~1.1.1",
+    "underscore": "~1.4.4",
+    "moment": "~2.0.0"
+  }
+}
